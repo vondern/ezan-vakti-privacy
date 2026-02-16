@@ -6,56 +6,75 @@
     <title>Ezan Vakti - Gizlilik Politikası</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #27ae60;
-            --bg-color: #f4f7f6;
-            --text-color: #333;
+            --primary: #2c3e50;
+            --accent: #27ae60;
+            --bg: #f8fafc;
+            --text: #334155;
+            --card-bg: #ffffff;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.7;
+            background-color: var(--bg);
+            color: var(--text);
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
         h1 {
-            color: var(--primary-color);
-            border-bottom: 3px solid var(--accent-color);
-            padding-bottom: 10px;
+            color: var(--primary);
+            font-size: 2.2em;
             text-align: center;
-        }
-        h2 {
-            color: var(--primary-color);
-            margin-top: 30px;
-            font-size: 1.4em;
-        }
-        p, li {
-            font-size: 1.1em;
-            color: #555;
+            margin-bottom: 10px;
         }
         .last-updated {
             text-align: center;
-            font-style: italic;
-            color: #888;
-            margin-bottom: 30px;
+            color: #64748b;
+            font-size: 0.95em;
+            margin-bottom: 40px;
         }
+        h2 {
+            color: var(--primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 35px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: var(--primary);
+            margin-top: 25px;
+        }
+        p, li {
+            font-size: 1.05em;
+            color: #475569;
+        }
+        ul { padding-left: 20px; }
+        .highlight-box {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
             font-size: 0.9em;
-            color: #aaa;
+            color: #94a3b8;
         }
         @media (max-width: 600px) {
-            .container { margin: 20px; padding: 20px; }
+            .container { padding: 25px; margin: 10px auto; }
+            h1 { font-size: 1.8em; }
         }
     </style>
 </head>
@@ -63,23 +82,59 @@
 
 <div class="container">
     <h1>Gizlilik Politikası</h1>
-    <p class="last-updated">Son Güncelleme: 16 Şubat 2026</p>
+    <p class="last-updated"><strong>Son Güncelleme:</strong> 16 Şubat 2026</p>
 
-    <p><strong>Ezan Vakti</strong> uygulaması olarak gizliliğinize önem veriyoruz. Bu metin, hangi verileri ne amaçla kullandığımızı açıklar.</p>
+    <p><strong>Ezan Vakitleri</strong> ("biz", "uygulamamız") olarak gizliliğinize önem veriyoruz. Bu gizlilik politikası, uygulamayı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve paylaşıldığını açıklar.</p>
 
-    <h2>1. Konum Bilgisi</h2>
-    <p>Uygulamamız, bulunduğunuz konuma göre doğru namaz vakitlerini hesaplayabilmek için hassas konum (GPS) bilgisine ihtiyaç duyar. Bu veri sadece hesaplama amaçlı kullanılır ve sunucularımızda depolanmaz.</p>
+    <h2>1. Topladığımız Bilgiler</h2>
 
-    <h2>2. Bildirimler</h2>
-    <p>Ezan vakitlerinde sizi haberdar etmek için bildirim sistemini kullanırız. Bildirim ayarlarını dilediğiniz zaman uygulama içerisinden veya cihaz ayarlarından değiştirebilirsiniz.</p>
+    <h3>1.1 Konum Bilgisi</h3>
+    <p>Uygulamamız, size doğru namaz vakitlerini gösterebilmek için cihazınızın konumunu kullanır:</p>
+    <ul>
+        <li><strong>Ne topluyoruz:</strong> Enlem ve boylam koordinatları.</li>
+        <li><strong>Nasıl kullanılır:</strong> Sadece namaz vakitlerini hesaplamak için Aladhan API'ye gönderilir.</li>
+        <li><strong>Depolama:</strong> Konum verisi cihazınızda yerel olarak saklanır ve sunucularımızda saklanmaz.</li>
+    </ul>
 
-    <h2>3. Reklamlar</h2>
-    <p>Uygulama içerisinde Google AdMob aracılığıyla reklamlar gösterilebilir. Bu hizmetler, ilgi alanınıza yönelik reklamlar sunmak için cihaz kimliği gibi anonim verileri kullanabilir.</p>
+    <h3>1.2 Bildirim İzni</h3>
+    <p>Namaz vakitlerinde size bildirim göndermek için bildirim izni talep ederiz. Sadece hatırlatmalar için kullanılır ve dilediğiniz zaman kapatılabilir.</p>
 
-    <h2>4. İletişim</h2>
-    <p>Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz.</p>
+    <div class="highlight-box">
+        <h3>1.3 Reklam Verileri (AdMob)</h3>
+        <p>Uygulamamız ücretsizdir ve Google AdMob reklamları içerir. AdMob cihaz modeli, işletim sistemi ve reklam etkileşimleri gibi anonim verileri toplayabilir.</p>
+        <p>Daha fazla bilgi için: <a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Gizlilik Politikası</a></p>
+    </div>
+
+    <h3>1.4 Ramazan Asistanı (AI Sohbet)</h3>
+    <p>Sorularınızı yanıtlamak için <strong>Groq AI</strong> kullanıyoruz:</p>
+    <ul>
+        <li>Sadece yazdığınız sorular Groq AI'ya gönderilir.</li>
+        <li>Sohbet geçmişi cihazınızda yerel olarak saklanır.</li>
+        <li>Kimlik bilginiz veya kişisel verileriniz paylaşılmaz.</li>
+    </ul>
+
+    <h2>2. Bilgileri Nasıl Kullanıyoruz</h2>
+    <p>Topladığımız verileri; doğru vakitleri göstermek, Kıble yönünü hesaplamak, AI asistan hizmeti sunmak ve uygulama performansını iyileştirmek için kullanıyoruz.</p>
+
+    <h2>3. Üçüncü Taraf Hizmetler</h2>
+    <ul>
+        <li><strong>Aladhan API:</strong> Namaz vakti hesaplama.</li>
+        <li><strong>Google AdMob:</strong> Reklam gösterimi.</li>
+        <li><strong>Groq AI:</strong> Ramazan asistanı sohbetleri.</li>
+    </ul>
+
+    <h2>4. Veri Güvenliği</h2>
+    <p>Tüm bağlantılar <strong>HTTPS</strong> ile şifrelenir. Hassas veriler cihazınızda yerel olarak tutulur. Verilerinizi asla üçüncü taraflara satmıyoruz.</p>
+
+    <h2>5. İletişim</h2>
+    <p>Gizlilik politikamız hakkında sorularınız varsa bizimle iletişime geçebilirsiniz:</p>
+    <p>
+        <strong>E-posta:</strong> <a href="mailto:ondervx@gmail.com">ondervx@gmail.com</a><br>
+        <strong>Geliştirici:</strong> Veysi Önder
+    </p>
 
     <footer>
+        Ezan Vakitleri uygulamasını kullanarak bu gizlilik politikasını kabul etmiş olursunuz.<br>
         &copy; 2026 Ezan Vakti - Tüm Hakları Saklıdır.
     </footer>
 </div>
