@@ -2,137 +2,87 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Ezan Vakitleri - Gizlilik Politikası</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezan Vakti - Gizlilik Politikası</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
-        h1 { color: #2c3e50; }
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            font-size: 1.4em;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 20px; }
+        }
     </style>
 </head>
 <body>
+
+<div class="container">
     <h1>Gizlilik Politikası</h1>
-    <p>Son Güncelleme: 16 Şubat 2026</p>
-    <hr>
-    <p>B# Gizlilik Politikası
-Ezan Vakitleri ("biz", "uygulamamız") olarak gizliliğinize önem veriyoruz. Bu gizlilik politikası, uygulamayı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve paylaşıldığını açıklar.
+    <p class="last-updated">Son Güncelleme: 16 Şubat 2026</p>
 
-## 1. Topladığımız Bilgiler
+    <p><strong>Ezan Vakti</strong> uygulaması olarak gizliliğinize önem veriyoruz. Bu metin, hangi verileri ne amaçla kullandığımızı açıklar.</p>
 
-### 1.1 Konum Bilgisi
-Uygulamamız, size doğru namaz vakitlerini gösterebilmek için cihazınızın konumunu kullanır:
-- **Ne topluyoruz:** Enlem ve boylam koordinatları
-- **Nasıl kullanılır:** Sadece namaz vakitlerini hesaplamak için Aladhan API'ye gönderilir
-- **Depolama:** Konum verisi cihazınızda yerel olarak saklanır ve sunucularımızda saklanmaz
-- **Kontrol:** Uygulama ayarlarından konum iznini istediğiniz zaman kapatabilirsiniz
+    <h2>1. Konum Bilgisi</h2>
+    <p>Uygulamamız, bulunduğunuz konuma göre doğru namaz vakitlerini hesaplayabilmek için hassas konum (GPS) bilgisine ihtiyaç duyar. Bu veri sadece hesaplama amaçlı kullanılır ve sunucularımızda depolanmaz.</p>
 
-### 1.2 Bildirim İzni
-Namaz vakitlerinde size bildirim göndermek için bildirim izni talep ederiz:
-- **Ne topluyoruz:** Bildirim tercihleriniz ve zamanlamaları
-- **Nasıl kullanılır:** Sadece namaz vakti hatırlatmaları için
-- **Kontrol:** Cihaz ayarlarından bildirimleri kapatabilirsiniz
+    <h2>2. Bildirimler</h2>
+    <p>Ezan vakitlerinde sizi haberdar etmek için bildirim sistemini kullanırız. Bildirim ayarlarını dilediğiniz zaman uygulama içerisinden veya cihaz ayarlarından değiştirebilirsiniz.</p>
 
-### 1.3 Reklam Verileri
-Uygulamamız ücretsizdir ve Google AdMob reklamları içerir. AdMob, kişiselleştirilmiş reklamlar göstermek için bazı bilgiler toplayabilir:
-- **Cihaz Bilgileri:** Cihaz modeli, işletim sistemi, benzersiz cihaz tanımlayıcıları
-- **Reklam Etkileşimleri:** Hangi reklamlara tıkladığınız, görüntülediğiniz reklamlar
-- **Kişiselleştirilmiş Reklamlar:** Google, ilgi alanlarınıza göre reklamlar gösterebilir
+    <h2>3. Reklamlar</h2>
+    <p>Uygulama içerisinde Google AdMob aracılığıyla reklamlar gösterilebilir. Bu hizmetler, ilgi alanınıza yönelik reklamlar sunmak için cihaz kimliği gibi anonim verileri kullanabilir.</p>
 
-**Reklam Tercihlerinizi Yönetin:**
-- Android: Ayarlar > Google > Reklamlar > Reklam kişiselleştirmeden vazgeç
-- iOS: Ayarlar > Gizlilik > Reklam > Reklam İzlemeyi Sınırla
+    <h2>4. İletişim</h2>
+    <p>Gizlilik politikamız hakkında sorularınız için bizimle iletişime geçebilirsiniz.</p>
 
-Daha fazla bilgi için [Google AdMob Gizlilik Politikası](https://support.google.com/admob/answer/6128543)
+    <footer>
+        &copy; 2026 Ezan Vakti - Tüm Hakları Saklıdır.
+    </footer>
+</div>
 
-### 1.4 Ramazan Asistanı (AI Sohbet)
-Ramazan ve oruç hakkında sorularınızı yanıtlamak için Groq AI kullanıyoruz:
-- **Ne topluyoruz:** Sadece yazdığınız sorular
-- **Nasıl kullanılır:** Groq AI'ya gönderilerek cevap alınır
-- **Depolama:** Sohbet geçmişi cihazınızda yerel olarak saklanır, sunucularımızda saklanmaz
-- **Kişisel Bilgi:** Kimlik bilginiz, adınız veya kişisel verileriniz gönderilmez
-
-### 1.5 Kullanım Verileri
-Uygulamanın performansını iyileştirmek için anonim kullanım istatistikleri toplayabiliriz:
-- Çökme raporları
-- Uygulama kullanım süreleri
-- Tıklama verileri (hangi özelliklerin kullanıldığı)
-
-## 2. Bilgileri Nasıl Kullanıyoruz
-
-Topladığımız bilgileri şu amaçlarla kullanırız:
-- ✅ Doğru namaz vakitlerini göstermek
-- ✅ Kıble yönünü hesaplamak
-- ✅ Ramazan imsakiyesi oluşturmak
-- ✅ İslami sorularınızı yanıtlamak (Ramazan Asistanı)
-- ✅ Bildirimler göndermek
-- ✅ Reklamlar göstermek (uygulama ücretsizdir)
-- ✅ Uygulama performansını iyileştirmek
-- ✅ Teknik sorunları gidermek
-
-## 3. Üçüncü Taraf Hizmetler
-
-Uygulamamız aşağıdaki üçüncü taraf hizmetleri kullanır:
-
-### 3.1 Aladhan API
-- **Amaç:** Namaz vakitlerini hesaplamak
-- **Paylaşılan Veri:** Konum (enlem/boylam), hesaplama yöntemi
-- **Gizlilik Politikası:** [https://aladhan.com/privacy-policy](https://aladhan.com/privacy-policy)
-
-### 3.2 Google AdMob
-- **Amaç:** Reklamlar göstermek
-- **Paylaşılan Veri:** Cihaz bilgileri, reklam tanımlayıcıları
-- **Gizlilik Politikası:** [https://policies.google.com/privacy](https://policies.google.com/privacy)
-
-### 3.3 Groq AI (Ramazan Asistanı)
-- **Amaç:** İslami sorularınızı yanıtlamak
-- **Paylaşılan Veri:** Sadece yazdığınız sorular (kimlik bilgisi yok)
-- **Gizlilik Politikası:** [https://groq.com/privacy-policy](https://groq.com/privacy-policy)
-
-## 4. Veri Güvenliği
-
-Verilerinizi korumak için:
-- 🔒 HTTPS şifreli bağlantılar kullanıyoruz
-- 🔒 Hassas bilgiler cihazınızda yerel olarak saklanır
-- 🔒 Sunucularımızda kişisel veri saklamıyoruz
-- 🔒 Verilerinizi asla üçüncü taraflara satmıyoruz
-- 🔒 Kimlik bilgileriniz (ad, e-posta, telefon) toplanmaz
-
-## 5. Çocukların Gizliliği
-
-Uygulamamız 4+ yaş için uygundur. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz. Eğer bir ebeveynseniz ve çocuğunuzun bize veri sağladığını düşünüyorsanız, lütfen bizimle iletişime geçin.
-
-## 6. Haklarınız (GDPR & KVKK)
-
-GDPR ve KVKK kapsamında şu haklara sahipsiniz:
-- 📋 Hangi verilerinizin toplandığını öğrenme
-- ✏️ Verilerinizin düzeltilmesini isteme
-- 🗑️ Verilerinizin silinmesini isteme
-- 🚫 Veri işlemeye itiraz etme
-- 📤 Verilerinizi taşınabilir formatta alma
-
-**Verilerinizi silmek için:**
-1. Uygulamayı kaldırın
-2. Cihaz ayarlarından uygulama verilerini temizleyin
-3. Google reklam tercihlerinizi sıfırlayın
-4. Bizimle iletişime geçerek tüm verilerin silinmesini talep edin
-
-## 7. Veri Saklama Süresi
-
-- **Konum Verileri:** Sadece namaz vakti hesaplaması sırasında kullanılır, saklanmaz
-- **Bildirim Tercihleri:** Uygulama silinene kadar cihazda saklanır
-- **AI Sohbet Geçmişi:** Uygulama silinene kadar cihazda saklanır
-- **Reklam Verileri:** Google AdMob politikalarına tabidir
-
-## 8. Değişiklikler
-
-Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanacak ve "Son Güncelleme" tarihi değişecektir. Önemli değişiklikler için uygulama içinde bildirim gösterebiliriz.
-
-## 9. İletişim
-
-Gizlilik politikamız hakkında sorularınız varsa:
-
-**E-posta:** [ondervx@gmail.com]  
-**Geliştirici: Veysi Onder  
-**Adres:** Oslo, Norveç
-
-Ezan Vakitleri uygulamasını kullanarak bu gizlilik politikasını kabul etmiş olursunuz.</p>
 </body>
 </html>
