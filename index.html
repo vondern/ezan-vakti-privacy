@@ -5,138 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezan Vakti - Gizlilik Politikası</title>
     <style>
-        :root {
-            --primary: #2c3e50;
-            --accent: #27ae60;
-            --bg: #f8fafc;
-            --text: #334155;
-            --card-bg: #ffffff;
-        }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.7;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 20px;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
         }
         .container {
-            max-width: 850px;
-            margin: 40px auto;
-            background: var(--card-bg);
-            padding: 50px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        }
-        h1 {
-            color: var(--primary);
-            font-size: 2.2em;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .last-updated {
-            text-align: center;
-            color: #64748b;
-            font-size: 0.95em;
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: var(--primary);
-            border-left: 4px solid var(--accent);
-            padding-left: 15px;
-            margin-top: 35px;
-            font-size: 1.5em;
-        }
-        h3 {
-            color: var(--primary);
-            margin-top: 25px;
-        }
-        p, li {
-            font-size: 1.05em;
-            color: #475569;
-        }
-        ul { padding-left: 20px; }
-        .highlight-box {
-            background-color: #f1f5f9;
-            padding: 20px;
+            background: #fff;
+            padding: 40px;
             border-radius: 8px;
-            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        a { color: var(--accent); text-decoration: none; font-weight: 600; }
-        a:hover { text-decoration: underline; }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-            font-size: 0.9em;
-            color: #94a3b8;
-        }
-        @media (max-width: 600px) {
-            .container { padding: 25px; margin: 10px auto; }
-            h1 { font-size: 1.8em; }
-        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 30px; border-left: 4px solid #27ae60; padding-left: 10px; }
+        h3 { color: #34495e; }
+        p, li { margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        strong { color: #000; }
+        .footer { margin-top: 40px; font-size: 0.9em; color: #7f8c8d; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h1>Gizlilik Politikası</h1>
-    <p class="last-updated"><strong>Son Güncelleme:</strong> 16 Şubat 2026</p>
+    <p><strong>Son Güncelleme: 16 Şubat 2026</strong></p>
 
-    <p><strong>Ezan Vakitleri</strong> ("biz", "uygulamamız") olarak gizliliğinize önem veriyoruz. Bu gizlilik politikası, uygulamayı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve paylaşıldığını açıklar.</p>
+    <p>Ezan Vakitleri ("biz", "uygulamamız") olarak gizliliğinize önem veriyoruz. Bu gizlilik politikası, uygulamayı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve paylaşıldığını açıklar.</p>
 
     <h2>1. Topladığımız Bilgiler</h2>
 
     <h3>1.1 Konum Bilgisi</h3>
     <p>Uygulamamız, size doğru namaz vakitlerini gösterebilmek için cihazınızın konumunu kullanır:</p>
     <ul>
-        <li><strong>Ne topluyoruz:</strong> Enlem ve boylam koordinatları.</li>
-        <li><strong>Nasıl kullanılır:</strong> Sadece namaz vakitlerini hesaplamak için Aladhan API'ye gönderilir.</li>
-        <li><strong>Depolama:</strong> Konum verisi cihazınızda yerel olarak saklanır ve sunucularımızda saklanmaz.</li>
+        <li><strong>Ne topluyoruz:</strong> Enlem ve boylam koordinatları</li>
+        <li><strong>Nasıl kullanılır:</strong> Sadece namaz vakitlerini hesaplamak için Aladhan API'ye gönderilir</li>
+        <li><strong>Depolama:</strong> Konum verisi cihazınızda yerel olarak saklanır ve sunucularımızda saklanmaz</li>
+        <li><strong>Kontrol:</strong> Uygulama ayarlarından konum iznini istediğiniz zaman kapatabilirsiniz</li>
     </ul>
 
     <h3>1.2 Bildirim İzni</h3>
-    <p>Namaz vakitlerinde size bildirim göndermek için bildirim izni talep ederiz. Sadece hatırlatmalar için kullanılır ve dilediğiniz zaman kapatılabilir.</p>
-
-    <div class="highlight-box">
-        <h3>1.3 Reklam Verileri (AdMob)</h3>
-        <p>Uygulamamız ücretsizdir ve Google AdMob reklamları içerir. AdMob cihaz modeli, işletim sistemi ve reklam etkileşimleri gibi anonim verileri toplayabilir.</p>
-        <p>Daha fazla bilgi için: <a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Gizlilik Politikası</a></p>
-    </div>
-
-    <h3>1.4 Ramazan Asistanı (AI Sohbet)</h3>
-    <p>Sorularınızı yanıtlamak için <strong>Groq AI</strong> kullanıyoruz:</p>
+    <p>Namaz vakitlerinde size bildirim göndermek için bildirim izni talep ederiz:</p>
     <ul>
-        <li>Sadece yazdığınız sorular Groq AI'ya gönderilir.</li>
-        <li>Sohbet geçmişi cihazınızda yerel olarak saklanır.</li>
-        <li>Kimlik bilginiz veya kişisel verileriniz paylaşılmaz.</li>
+        <li><strong>Ne topluyoruz:</strong> Bildirim tercihleriniz ve zamanlamaları</li>
+        <li><strong>Nasıl kullanılır:</strong> Sadece namaz vakti hatırlatmaları için</li>
+        <li><strong>Kontrol:</strong> Cihaz ayarlarından bildirimleri kapatabilirsiniz</li>
     </ul>
 
+    <h3>1.3 Reklam Verileri</h3>
+    <p>Uygulamamız ücretsizdir ve Google AdMob reklamları içerir. AdMob, kişiselleştirilmiş reklamlar göstermek için bazı bilgiler toplayabilir:</p>
+    <ul>
+        <li><strong>Cihaz Bilgileri:</strong> Cihaz modeli, işletim sistemi, benzersiz cihaz tanımlayıcıları</li>
+        <li><strong>Reklam Etkileşimleri:</strong> Hangi reklamlara tıkladığınız, görüntülediğiniz reklamlar</li>
+        <li><strong>Kişiselleştirilmiş Reklamlar:</strong> Google, ilgi alanlarınıza göre reklamlar gösterebilir</li>
+    </ul>
+
+    <h3>1.4 Ramazan Asistanı (AI Sohbet)</h3>
+    <p>Ramazan ve oruç hakkında sorularınızı yanıtlamak için Groq AI kullanıyoruz:</p>
+    <ul>
+        <li><strong>Ne topluyoruz:</strong> Sadece yazdığınız sorular</li>
+        <li><strong>Nasıl kullanılır:</strong> Groq AI'ya gönderilerek cevap alınır</li>
+        <li><strong>Depolama:</strong> Sohbet geçmişi cihazınızda yerel olarak saklanır, sunucularımızda saklanmaz</li>
+        <li><strong>Kişisel Bilgi:</strong> Kimlik bilginiz, adınız veya kişisel verileriniz gönderilmez</li>
+    </ul>
+
+    <h3>1.5 Kullanım Verileri</h3>
+    <p>Uygulamanın performansını iyileştirmek için anonim kullanım istatistikleri toplayabiliriz: Çökme raporları, uygulama kullanım süreleri, tıklama verileri.</p>
+
     <h2>2. Bilgileri Nasıl Kullanıyoruz</h2>
-    <p>Topladığımız verileri; doğru vakitleri göstermek, Kıble yönünü hesaplamak, AI asistan hizmeti sunmak ve uygulama performansını iyileştirmek için kullanıyoruz.</p>
+    <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
+    <ul>
+        <li>Doğru namaz vakitlerini göstermek ve Kıble yönünü hesaplamak</li>
+        <li>Ramazan imsakiyesi oluşturmak ve İslami sorularınızı yanıtlamak</li>
+        <li>Bildirimler göndermek ve reklamlar göstermek</li>
+        <li>Uygulama performansını iyileştirmek ve teknik sorunları gidermek</li>
+    </ul>
 
     <h2>3. Üçüncü Taraf Hizmetler</h2>
     <ul>
-        <li><strong>Aladhan API:</strong> Namaz vakti hesaplama.</li>
-        <li><strong>Google AdMob:</strong> Reklam gösterimi.</li>
-        <li><strong>Groq AI:</strong> Ramazan asistanı sohbetleri.</li>
+        <li><strong>Aladhan API:</strong> Namaz vakitlerini hesaplamak için.</li>
+        <li><strong>Google AdMob:</strong> Reklamlar göstermek için.</li>
+        <li><strong>Groq AI (Ramazan Asistanı):</strong> İslami sorularınızı yanıtlamak için.</li>
     </ul>
 
     <h2>4. Veri Güvenliği</h2>
-    <p>Tüm bağlantılar <strong>HTTPS</strong> ile şifrelenir. Hassas veriler cihazınızda yerel olarak tutulur. Verilerinizi asla üçüncü taraflara satmıyoruz.</p>
+    <p>Verilerinizi korumak için HTTPS şifreli bağlantılar kullanıyoruz. Hassas bilgiler cihazınızda yerel olarak saklanır. Verilerinizi asla üçüncü taraflara satmıyoruz.</p>
 
-    <h2>5. İletişim</h2>
-    <p>Gizlilik politikamız hakkında sorularınız varsa bizimle iletişime geçebilirsiniz:</p>
-    <p>
-        <strong>E-posta:</strong> <a href="mailto:ondervx@gmail.com">ondervx@gmail.com</a><br>
-        <strong>Geliştirici:</strong> Veysi Önder
-    </p>
+    <h2>5. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 4+ yaş için uygundur. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz.</p>
 
-    <footer>
+    <h2>6. Haklarınız (GDPR & KVKK)</h2>
+    <p>GDPR ve KVKK kapsamında hangi verilerinizin toplandığını öğrenme, düzeltilmesini veya silinmesini isteme hakkına sahipsiniz.</p>
+
+    <h2>7. İletişim</h2>
+    <p>Gizlilik politikamız hakkında sorularınız varsa:</p>
+    <p><strong>E-posta:</strong> ondervx@gmail.com<br>
+    <strong>Geliştirici:</strong> Veysi Onder</p>
+
+    <div class="footer">
         Ezan Vakitleri uygulamasını kullanarak bu gizlilik politikasını kabul etmiş olursunuz.<br>
         &copy; 2026 Ezan Vakti - Tüm Hakları Saklıdır.
-    </footer>
+    </div>
 </div>
 
 </body>
