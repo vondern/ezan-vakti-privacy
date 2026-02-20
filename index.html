@@ -26,6 +26,7 @@
         p, li { margin-bottom: 10px; }
         ul { padding-left: 20px; }
         strong { color: #000; }
+        .highlight { background-color: #fff9c4; padding: 2px 5px; border-radius: 3px; border: 1px dashed #fbc02d; }
         .footer { margin-top: 40px; font-size: 0.9em; color: #7f8c8d; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
@@ -33,7 +34,7 @@
 
 <div class="container">
     <h1>Gizlilik Politikası</h1>
-    <p><strong>Son Güncelleme: 16 Şubat 2026</strong></p>
+    <p><strong>Son Güncelleme: 20 Şubat 2026</strong></p>
 
     <p>Ezan Vakitleri ("biz", "uygulamamız") olarak gizliliğinize önem veriyoruz. Bu gizlilik politikası, uygulamayı kullanırken hangi bilgilerin toplandığını, nasıl kullanıldığını ve paylaşıldığını açıklar.</p>
 
@@ -64,13 +65,14 @@
         <li><strong>Kişiselleştirilmiş Reklamlar:</strong> Google, ilgi alanlarınıza göre reklamlar gösterebilir</li>
     </ul>
 
-    <h3>1.4 Ramazan Asistanı (AI Sohbet)</h3>
-    <p>Ramazan ve oruç hakkında sorularınızı yanıtlamak için Groq AI kullanıyoruz:</p>
+    <h3>1.4 Yapay Zeka Servisleri ve Ramazan Asistanı</h3>
+    <p>Uygulamamızın "Ramazan Asistanı" özelliği, sorularınızı yanıtlamak için üçüncü taraf yapay zeka sağlayıcılarını (Groq AI / OpenAI / Google Gemini) kullanır:</p>
     <ul>
-        <li><strong>Ne topluyoruz:</strong> Sadece yazdığınız sorular</li>
-        <li><strong>Nasıl kullanılır:</strong> Groq AI'ya gönderilerek cevap alınır</li>
-        <li><strong>Depolama:</strong> Sohbet geçmişi cihazınızda yerel olarak saklanır, sunucularımızda saklanmaz</li>
-        <li><strong>Kişisel Bilgi:</strong> Kimlik bilginiz, adınız veya kişisel verileriniz gönderilmez</li>
+        <li><strong>Veri Paylaşımı ve İzin:</strong> Bu özelliği kullanmadan önce, verilerinizin paylaşılacağına dair <span class="highlight">açık rızanız (consent) alınır.</span></li>
+        <li><strong>Paylaşılan Veriler:</strong> Sadece asistanla paylaştığınız metin tabanlı sorularınız AI servis sağlayıcısına iletilir.</li>
+        <li><strong>Anonimlik:</strong> <span class="highlight">Adınız, e-posta adresiniz, konumunuz veya cihaz kimliğiniz (Device ID) asla AI servis sağlayıcıları ile paylaşılmaz.</span> Veriler tamamen anonim olarak işlenir.</li>
+        <li><strong>Kullanım Amacı:</strong> Bu veriler sadece uygulama işlevselliğini (sorularınızı yanıtlama) sağlamak amacıyla kullanılır.</li>
+        <li><strong>Depolama:</strong> Sohbet geçmişi sunucularımızda tutulmaz, sadece cihazınızda yerel olarak saklanır.</li>
     </ul>
 
     <h3>1.5 Kullanım Verileri</h3>
@@ -80,16 +82,17 @@
     <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
     <ul>
         <li>Doğru namaz vakitlerini göstermek ve Kıble yönünü hesaplamak</li>
-        <li>Ramazan imsakiyesi oluşturmak ve İslami sorularınızı yanıtlamak</li>
+        <li>Ramazan imsakiyesi oluşturmak ve İslami sorularınızı yapay zeka aracılığıyla yanıtlamak</li>
         <li>Bildirimler göndermek ve reklamlar göstermek</li>
         <li>Uygulama performansını iyileştirmek ve teknik sorunları gidermek</li>
     </ul>
 
     <h2>3. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulamamız, belirli işlevleri yerine getirmek için aşağıdaki güvenilir üçüncü taraf hizmetlerini kullanmaktadır:</p>
     <ul>
-        <li><strong>Aladhan API:</strong> Namaz vakitlerini hesaplamak için.</li>
-        <li><strong>Google AdMob:</strong> Reklamlar göstermek için.</li>
-        <li><strong>Groq AI (Ramazan Asistanı):</strong> İslami sorularınızı yanıtlamak için.</li>
+        <li><strong>Aladhan API:</strong> Namaz vakitlerini koordinat bazlı hesaplamak için kullanılır.</li>
+        <li><strong>Google AdMob:</strong> Uygulama içi reklam gösterimi ve reklam etkileşim analizi için kullanılır.</li>
+        <li><strong>Groq / OpenAI / Google Gemini:</strong> Ramazan Asistanı özelliği kapsamında kullanıcı sorularını anonim olarak işleyip yanıt üretmek için kullanılır.</li>
     </ul>
 
     <h2>4. Veri Güvenliği</h2>
@@ -99,7 +102,7 @@
     <p>Uygulamamız 4+ yaş için uygundur. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz.</p>
 
     <h2>6. Haklarınız (GDPR & KVKK)</h2>
-    <p>GDPR ve KVKK kapsamında hangi verilerinizin toplandığını öğrenme, düzeltilmesini veya silinmesini isteme hakkına sahipsiniz.</p>
+    <p>GDPR ve KVKK kapsamında hangi verilerinizin toplandığını öğrenme, düzeltilmesini veya silinmesini isteme hakkına sahipsiniz. AI asistanı ile paylaştığınız veriler yerel olduğu için uygulama verilerini temizleyerek bu bilgileri silebilirsiniz.</p>
 
     <h2>7. İletişim</h2>
     <p>Gizlilik politikamız hakkında sorularınız varsa:</p>
